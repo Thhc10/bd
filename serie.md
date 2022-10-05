@@ -84,7 +84,7 @@ WHERE m1 IN (SELECT DISTINCT m2 FROM C)
 ```
 ![](image/q3.png)
 
-@@INSERIR@@
+$\pi_{m1}\pi_{m1}C\cap (\pi_{m2}C)$
 
 
 Q4: dê uma lista dos materiais que não contêm nenhum material.
@@ -95,7 +95,7 @@ WHERE m2 NOT IN (SELECT m1 FROM C)
 ```
 ![](image/q4.png)
 
-@@INSERIR@@
+$\pi_{m2}\pi_{m2}C - (\pi_{m1}C)$
 
 
 Q5:dê uma lista dos materiais que contêm um ou mais materiais mas não estão contidos em nenhum material.
@@ -106,7 +106,8 @@ WHERE m1 NOT IN (SELECT m2 FROM C)
 ```
 ![](image/q5.png)
 
-@@INSERIR@@
+$\pi_{m1}\pi_{m1}C - (\pi_{m2}C)$
+
 
 
 Considere agora a tabela M(m, nome, tipo) e defina  os atributos m1 e m2 da tabela C como Chaves Estrangeiras referenciando a Chave Primária m de M.
@@ -114,13 +115,18 @@ Considere agora a tabela M(m, nome, tipo) e defina  os atributos m1 e m2 da tabe
 
 Q6: dê uma lista dos materiais "obsoletos", isto é, que não contêm nem estão contidos em nenhum material
 ```sql
+SELECT m
+FROM M
+WHERE m NOT IN 
+(SELECT DISTINCT m1
+FROM C
+UNION
 SELECT DISTINCT m2
 FROM C
-WHERE m2 NOT IN (SELECT m1 FROM C)
 ```
 ![](image/q6.png)
 
-@@INSERIR@@
+$\pi_{m}\pi_{m}M - (\pi_{m1}C\cup\pi_{m2}C)$
 
 
 Q7: dê uma lista dos materiais que contêm dois ou mais materiais.
