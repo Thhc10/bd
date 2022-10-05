@@ -37,7 +37,7 @@ m1  m2
 
 ### A Tabela Cloop 
 
-![](image/Cloop.png)
+![](image/Cloop.)
 
 Considere a tabela C(m1,m2) representando o auto-relacionamento N x N
 entre materiais (slides Cap4 24-), com o significado:
