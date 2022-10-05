@@ -1,4 +1,4 @@
-# série 
+# Série 2
 
 Considere as tabela C(m1,m2), M(m) e Cloop(m1,m2) na página contem.html: escreva expressões da Álgebra Relacional (AR) para as consultas Q6 a Q12.
 
