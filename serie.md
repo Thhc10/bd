@@ -56,7 +56,7 @@ ORDER BY m1
 ```
 ![](image/q0.png)
 
-![](image/q0_eq.png)
+$\tau_{m1 \ asc}(\pi_{m1} c\cup_{}^{}\pi_{m2}c)$
 
 Q1: dê uma lista dos materiais que contêm um ou mais materiais.
 ```sql
