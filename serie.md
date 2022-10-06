@@ -68,6 +68,7 @@ Q1: dê uma lista dos materiais que contêm um ou mais materiais.
 select distinct C.m1 from C 
 ```
 ![](image/q1.png)
+
 $$\delta$$
 $$\pi _C.m1^C$$
 
@@ -77,6 +78,7 @@ Q2: dê uma lista dos materiais que estão contidos em outros materiais.
 select distinct C.m2 from C
 ```
 ![](image/q2.png)
+
 $$\delta$$
 $$\pi _C.m2^C$$
 
@@ -179,6 +181,7 @@ Q11: verifique se a tabela C tem o seguinte tipo de inconsistencia: algum materi
 SELECT * FROM Cloop AS C1, Cloop AS C2 WHERE C1.m1 = C2.m2 AND C1.m2 = C2.m1
 ```
 ![](image/q11.png)
+
 $$\sigma_{c1.m1 = c2.m2 AND c1.m2 = c2.m1}$$
 $$(\rho_{c1}cloop \  X  \ \rho_{c2}cloop)$$
 
