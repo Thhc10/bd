@@ -1,3 +1,8 @@
+### Autores
+* Thiago Henrique da Costa   206234 
+* Giovanna Gennari Jungklaus 198010 
+
+
 # Série 2
 
 Considere as tabela C(m1,m2), M(m) e Cloop(m1,m2) na página contem.html: escreva expressões da Álgebra Relacional (AR) para as consultas Q6 a Q12.
